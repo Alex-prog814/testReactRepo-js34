@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Data from './components/Data';
+import Like from './components/Like';
+import RenderPicture from './components/RenderPicture';
+import Input from './components/Input';
+import ProductsList from './components/ProductsList';
+import AuthomaticLike from './components/AuthomaticLike';
 
 function App() {
+  const products = ['Apple', 'Orange', 'Pineapple', 'Lemon', 'Grape'];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      {/* <Data names={names} getInfo={getInfo} /> */}
+      {/* <Like /> */}
+      {/* <RenderPicture /> */}
+      {/* <Input /> */}
+      {/* <ProductsList products={products} /> */}
+      <AuthomaticLike />
+    </>
+  )
+};
 
 export default App;
